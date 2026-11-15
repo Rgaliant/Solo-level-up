@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Solo Level Up</title>
+  <meta name="description" content="A 60-day gamified daily tracker. Complete daily quests, clear gates, level up your real life." />
+  <meta name="theme-color" content="#05070f" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2305070f'/%3E%3Cpath d='M9 22 16 7l7 15h-4l-3-7-3 7z' fill='%234cc9ff'/%3E%3C/svg%3E" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar" hidden>
+    <div class="brand"><span class="brand-mark">▲</span> SOLO <b>LEVEL UP</b></div>
+    <nav class="tabs" id="tabs" aria-label="Main">
+      <button data-view="status">Status</button>
+      <button data-view="quests">Quests</button>
+      <button data-view="gates">Gates</button>
+      <button data-view="campaign">60 Days</button>
+      <button data-view="shop">Shop</button>
+      <button data-view="system">System</button>
+    </nav>
+    <div class="top-meta" id="topMeta"></div>
+  </header>
+
+  <main id="app" class="app"></main>
+
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <div id="modal" class="modal" hidden></div>
+  <div id="tooltip" class="tooltip" hidden></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
